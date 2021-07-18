@@ -5,7 +5,7 @@
 # in the LICENSE file at https://snek.at/license
 
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions#name
-name: Publish
+name: Jaen Publish
 
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions#on
 on:
@@ -15,10 +15,13 @@ on:
 # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobs
 jobs:
   # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_id
-  publish:
+  jaen-publish:
     # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idruns-on
     runs-on: ubuntu-latest
 
+    env:
+      JAEN_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+  
     # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idsteps
     steps:
       # https://help.github.com/en/articles/virtual-environments-for-github-actions#default-environment-variables
@@ -47,7 +50,6 @@ jobs:
 
         # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idstepsrun
         run: |
-
           # Create jean-storage branch without history
           git checkout --orphan jaen-storage
 
@@ -55,14 +57,15 @@ jobs:
           git rm -rf .
 
           # Create `jaen-data.json`
-          echo '${{ toJson(github.event.client_payload) }}' > jaen-data.json
+
+          echo $JAEN_PAYLOAD > jaen-data.json
 
           # reveal what `jaen-data.json` looks like in the logs
           cat jaen-data.json
 
           # Git: add, commit, and push changes
           git add jaen-data.json
-          git commit -m "Update jaen-data.json"
+          git commit -m "jaen-publish(jaen-data.json): update jaen-data" || echo "Nothing to commit, working tree clean."
           GIT_TRACE=1 git push -f --verbose origin jaen-storage
 
       # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idstepsid
@@ -70,7 +73,6 @@ jobs:
           Deploy jean-data to Github Pages 🚀
           # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idstepsrun
         run: |
-
           # Create gh-pages branch without history
           git checkout --orphan gh-pages
 
@@ -82,9 +84,9 @@ jobs:
           fi
 
           # Create `jaen-data.json`
-          echo '${{ toJson(github.event.client_payload) }}' > jaen-data.json
+          echo $JAEN_PAYLOAD > jaen-data.json
 
           # Git: add, commit, and push changes
           git add .
-          git commit -m "Update jaen-data.json"
+          git commit -m "jaen-publish(jaen-data.json): update jaen-data" || echo "Nothing to commit, working tree clean."
           GIT_TRACE=1 git push -f --verbose origin gh-pages
