@@ -51,7 +51,7 @@ jobs:
 
             # Adjust CNAME
             domainOld="jaen-template.snek-at.snek.at"
-            domain="${GITHUB_REPOSITORY#*/}.${GITHUB_REPOSITORY%*/}.snek.at"
+            domain="${GITHUB_REPOSITORY#*/}.${GITHUB_REPOSITORY%/*}.snek.at"
             sed -i "s|$domainOld|$domain|g" public/CNAME
             git add public/CNAME
             
