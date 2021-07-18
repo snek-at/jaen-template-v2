@@ -36,7 +36,6 @@ jobs:
 
         # https://help.github.com/en/articles/workflow-syntax-for-github-actions#jobsjob_idstepsrun
         run: |
-
           # Git: set identity
           git config --global user.name "snekmin"
           git config --global user.email "noreply.snek.at@gmail.com"
@@ -57,8 +56,7 @@ jobs:
           git rm -rf .
 
           # Create `jaen-data.json`
-
-          echo $JAEN_PAYLOAD > jaen-data.json
+          curl -L ${{github.event.client_payload.jaendata_url}} | gunzip - | openssl enc -d -base64 -A -aes-256-cbc -md md5 -pass pass:"${{github.event.client_payload.encryption_token}}" -out jaen-data.json
 
           # reveal what `jaen-data.json` looks like in the logs
           cat jaen-data.json
@@ -84,8 +82,9 @@ jobs:
           fi
 
           # Create `jaen-data.json`
-          echo $JAEN_PAYLOAD > jaen-data.json
 
+          curl -L ${{github.event.client_payload.jaendata_url}} | gunzip - | openssl enc -d -base64 -A -aes-256-cbc -md md5 -pass pass:"${{github.event.client_payload.encryption_token}}" -out jaen-data.json
+          
           # Git: add, commit, and push changes
           git add .
           git commit -m "jaen-publish(jaen-data.json): update jaen-data" || echo "Nothing to commit, working tree clean."
