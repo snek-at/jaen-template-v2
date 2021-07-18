@@ -11,7 +11,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-
       # https://help.github.com/en/articles/virtual-environments-for-github-actions#default-environment-variables
       # https://github.com/actions/checkout
       - name: Checkout 🛎️
@@ -51,8 +50,9 @@ jobs:
             git add .env.local
 
             # Adjust CNAME
-            domain="${GITHUB_REPOSITORY#*/}.${GITHUB_ACTOR}.snek.at"
-            echo ${domain} > public/CNAME
+            domainOld="jaen-template.snek-at.snek.at"
+            domain="${GITHUB_REPOSITORY#*/}.${GITHUB_REPOSITORY%*/}.snek.at"
+            sed -i "s|$domainOld|$domain|g" public/CNAME
             git add public/CNAME
             
             # Adjust package.json
@@ -66,9 +66,8 @@ jobs:
             sed -i "s|$repositoryOld|$repository|g" package.json
             sed -i "s|$bugsurlOld|$bugsurl|g" package.json
             git add package.json
-
             # Git: commit, and push changes
-            git commit -m "Configure Jaen gitRemote" || echo "Nothing to commit, working tree clean."
+            git commit -m "deploy(package.json): configure Jaen gitRemote" || echo "Nothing to commit, working tree clean."
             GIT_TRACE=1 git push -f --verbose origin main
 
             echo "Create jaen-storage branch"
@@ -82,14 +81,14 @@ jobs:
             cat jaen-data.json
             # Git: add, commit, and push changes
             git add jaen-data.json
-            git commit -m "Update jaen-data.json" || echo "Nothing to commit, working tree clean."
+            git commit -m "deploy(jaen-data.json): update jaen-data" || echo "Nothing to commit, working tree clean."
             GIT_TRACE=1 git push -f --verbose origin jaen-storage
 
             # Create gh-pages branch without history
             git checkout --orphan gh-pages
             echo '' > jaen-data.json
             git add jaen-data.json
-            git commit -m "Update jaen-data.json" || echo "Nothing to commit, working tree clean."
+            git commit -m "deploy(jaen-data.json): update jaen-data" || echo "Nothing to commit, working tree clean."
             GIT_TRACE=1 git push -f --verbose origin gh-pages
           else
             # Jaen is already configured"
