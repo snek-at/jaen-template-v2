@@ -13,7 +13,7 @@
     "build2": "npm run build:types && npm run build:js",
     "build:types": "tsc",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline --ignore \"src/**/*.test.ts\" --copy-files",
-    "commit": "git-cz"
+    "commit": "git-cz --disable-emoji"
   },
   "main": "lib/index.js",
   "files": [
