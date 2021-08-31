@@ -1,6 +1,6 @@
 // import {StarIcon} from '@chakra-ui/icons'
 // import {Box, Image, Badge} from '@chakra-ui/react'
-import {blocks, fields} from '@snek-at/jaen-pages'
+// import {blocks, fields} from '@snek-at/jaen-pages'
 
 // import * as React from 'react'
 
