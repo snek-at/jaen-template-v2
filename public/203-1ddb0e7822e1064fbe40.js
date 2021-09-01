@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_snek_at_jaen_template=self.webpackChunk_snek_at_jaen_template||[]).push([[203],{18203:function(e,n,t){t.r(n);t(67294);var a=t(75555),u=t(6483),s=t(23431);n.default=(0,a.X)((function(){return(0,s.jsx)(u.Z,null)}))}}]);
-//# sourceMappingURL=203-1ddb0e7822e1064fbe40.js.map
