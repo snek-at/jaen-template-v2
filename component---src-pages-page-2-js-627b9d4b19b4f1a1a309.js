@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk_snek_at_jaen_template=self.webpackChunk_snek_at_jaen_template||[]).push([[617],{98981:function(e,t,a){a.r(t);a(67294);var n=a(82183),l=a(54537),s=a(94957),o=a(23431);t.default=function(){return(0,o.jsx)(l.Z,null,(0,o.jsx)(s.Z,{title:"Page two"}),(0,o.jsx)("h1",null,"Hi from the second page"),(0,o.jsx)("p",null,"Welcome to page 2"),(0,o.jsx)(n.rU,{to:"/"},"Go back to the homepage"))}}}]);
-//# sourceMappingURL=component---src-pages-page-2-js-627b9d4b19b4f1a1a309.js.map

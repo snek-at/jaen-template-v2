@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmy_gatsby_site=self.webpackChunkmy_gatsby_site||[]).push([[384],{80384:function(s,t,e){e.r(t);e(2784);var u=e(8162),n=e(50786),a=e(18778);t.default=(0,u.X)((function(){return(0,a.jsx)(n.Z,null)}))}}]);
+//# sourceMappingURL=384-651958568add386add6b.js.map

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-404-js",
     "path": "/404/",
-    "result": {"pageContext":{"jaenPageId":"SitePage /404/"}},
-    "staticQueryHashes": ["3000541721","3503512507","3649515864","3832545140"]}
+    "result": {"pageContext":{"jaenPageContext":{"id":"SitePage /404/","template":"","slug":"","pageMetadata":{"title":"Component/404/","description":"","image":"","canonical":"","datePublished":"2021-09-02T16:48:37.416Z","isBlogPost":false}}}},
+    "staticQueryHashes": ["2561576124","2722985616","3832545140"]}
