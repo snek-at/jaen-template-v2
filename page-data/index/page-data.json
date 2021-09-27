@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"pageContext":{"jaenPageContext":{"id":"SitePage /","template":"","slug":"","pageMetadata":{"title":"ComponentIndex","description":"","image":"","canonical":"","datePublished":"2021-09-02T16:48:37.416Z","isBlogPost":false}}}},
-    "staticQueryHashes": ["2561576124","2722985616","3832545140"]}
+    "result": {"pageContext":{"jaenPageContext":{"id":"SitePage /","pageMetadata":{"title":"Index","datePublished":"2021-09-27T22:32:49.271Z"},"images":[]}}},
+    "staticQueryHashes": ["2561576124","3160394115","3372958248","3402799529","3832545140"]}
