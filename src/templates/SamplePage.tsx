@@ -1,8 +1,24 @@
-import {fields} from '@snek-at/jaen-pages/src'
-import type {JaenTemplate} from '@snek-at/jaen-pages/src/types'
+import {fields, JaenTemplate} from '@snek-at/jaen-pages'
+import {Box, Container, Text} from '@chakra-ui/react'
 
 const SamplePage: JaenTemplate = () => {
-  return <fields.TextField fieldName="text" initValue="<p>my value</p>" />
+  return (
+    <Box mt="25vh">
+      <Container centerContent>
+        <fields.ImageField
+          fieldName="sample-image"
+          initValue={{src: '', alt: 'sampleimage'}}
+        />
+        <Text mt="5">
+          <fields.TextField
+            fieldName="sample-text"
+            initValue="<p>Fill me</p>"
+            rtf={true}
+          />
+        </Text>
+      </Container>
+    </Box>
+  )
 }
 
 SamplePage.TemplateName = 'SamplePage'

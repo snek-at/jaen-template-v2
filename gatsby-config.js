@@ -9,7 +9,9 @@ module.exports = {
     {
       resolve: '@snek-at/jaen-pages',
       options: {
-        templates: {}
+        templates: {
+          SamplePage: path.resolve('src/templates/SamplePage.tsx')
+        }
       }
     },
     {
