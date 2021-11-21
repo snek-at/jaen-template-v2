@@ -11,6 +11,18 @@
           "createdAt": "2021-09-28T00:40:10.647Z"
         }
       ]
+    },
+    "SitePage /": {
+      "context": {
+        "fileUrl": "https://osg.snek.at/storage/BQACAgQAAxkDAANYYZqNk89vWlsS07O7h6RjCjLOBd4AAkYLAAL6WdhQRD0OA1SzX9kiBA",
+        "createdAt": "2021-11-21T18:18:59.184Z"
+      },
+      "migrations": [
+        {
+          "fileUrl": "https://osg.snek.at/storage/BQACAgQAAxkDAANYYZqNk89vWlsS07O7h6RjCjLOBd4AAkYLAAL6WdhQRD0OA1SzX9kiBA",
+          "createdAt": "2021-11-21T18:18:59.184Z"
+        }
+      ]
     }
   },
   "snekFinder": {
