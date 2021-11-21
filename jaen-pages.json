@@ -14,21 +14,25 @@
     },
     "SitePage /": {
       "context": {
-        "fileUrl": "https://osg.snek.at/storage/BQACAgQAAxkDAANYYZqNk89vWlsS07O7h6RjCjLOBd4AAkYLAAL6WdhQRD0OA1SzX9kiBA",
-        "createdAt": "2021-11-21T18:18:59.184Z"
+        "createdAt": "2021-11-21T18:54:23.742Z",
+        "fileUrl": "https://cloudflare-ipfs.com/ipfs/QmVXJVqjH8hqR2EduwRGRURRy1zY6QCjf2sfpkyDzRDtnT"
       },
       "migrations": [
         {
           "fileUrl": "https://osg.snek.at/storage/BQACAgQAAxkDAANYYZqNk89vWlsS07O7h6RjCjLOBd4AAkYLAAL6WdhQRD0OA1SzX9kiBA",
           "createdAt": "2021-11-21T18:18:59.184Z"
+        },
+        {
+          "fileUrl": "https://osg.snek.at/storage/BQACAgQAAxkDAANmYZqV3xP8Ec-hDOkDUqagM3O_2JoAAl8LAAL6WdhQ3XSYG5bmv6wiBA",
+          "createdAt": "2021-11-21T18:54:23.742Z"
         }
       ]
     }
   },
   "snekFinder": {
     "context": {
-      "createdAt": "2021-11-04T17:53:35.792Z",
-      "fileUrl": "https://cloudflare-ipfs.com/ipfs/QmefEmJtts7wrS4u75V1REvB2XXiYSChYaWHBgBRUomqET"
+      "createdAt": "2021-11-21T18:54:23.742Z",
+      "fileUrl": "https://cloudflare-ipfs.com/ipfs/QmW3DiUb5274xTL7cbsa3pZY5EyaSzJpB96cP7GbpVRcAs"
     },
     "migrations": [
       {
@@ -38,6 +42,10 @@
       {
         "createdAt": "2021-11-04T17:53:35.792Z",
         "fileUrl": "https://cloudflare-ipfs.com/ipfs/QmcQLnVrnN5JLyWpcpWAjgm37rdZKamdDMMh4iKjdMdSDE"
+      },
+      {
+        "createdAt": "2021-11-21T18:54:23.742Z",
+        "fileUrl": "https://osg.snek.at/storage/BQACAgQAAxkDAANlYZqV28a7097qmMjvd00iFx7M5tgAAl4LAAL6WdhQsW753yRCkaQiBA"
       }
     ]
   }
