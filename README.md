@@ -7,8 +7,8 @@
 <h3 align="center">Snek Jaen-Template</h3>
 
 <p align="center">
-  This is the official Jaen[ˈdʒæn] template provided by snek-at.
-  Featuring Jaen the free, hot and secure CMS framework for ReactJS.
+  Welcome to the official Jaen [ˈdʒæn] template, presented by snek-at. 
+  Discover Jaen, the sleek, free, and secure CMS framework designed for Gatsby.
   <br>
   <br>
   <cite>"A bowl is most useful when it is empty."</cite> - Lao Tzu
@@ -28,10 +28,10 @@
 
 ## [](#table-of-contents)What’s In This Document
 - [💪 Motivation](#-motivation)
-    - [Jaen Features](#jaen-features)
-    - [Roadmap](#roadmap)
-    - [Msg inspiring PPL](#msg-inspiring-ppl)
-    - [Disclaimer](#disclaimer)
+    - [Features](#features)
+    - [Development Roadmap](#development-roadmap)
+    - [Msg inspiring PPL](#-msg-inspiring-ppl)
+    - [Disclaimer](#-disclaimer)
 - [🚀 Get Up and Running in 5 Minutes](#-get-up-and-running-in-5-minutes)
     - [Generate from template Generate Jaen on GitHub](#generate-from-template-generate-jaen-on-github)
     - [First Deployment](#first-deployment)
@@ -64,53 +64,62 @@
 
 ## [](#-motivation)💪 Motivation
 
-A CMS **should not** be the defining feature of a webapp. Neither should Ecommerce or anything other than your code. \
-ERP integration **should not** force developer to cut corners.
+Your CMS **should not** dictate the identity of your webapp. It shouldn't be restricted by eCommerce or any third-party integration. At the heart of your webapp should be **your code**. 
 
-- Jaen **does not** interfere with **your** user experience.
-- Jean **does not** challange **your** application design.
-- Jaen gives the power back to **you**.
+Jaen is designed with this philosophy:
 
-One thing and one thing only with clean and well documented interfaces.
-Customizable, extensible and open-source.
+- Jaen integrates seamlessly, without disturbing **your** user experience.
+- Jaen respects and complements **your** application design.
+- Jaen empowers you with control and flexibility.
 
-### Jaen Features
-* A fast, attractive interface for authors
-* Complete control over front-end design and structure
-* Fast out of the box, cache-friendly when you need it
-* StreamField encourages flexible content without compromising structure
-* Excellent support for images and embedded content
-* Powered by blockchain and can be run for free
-* Simple, intuitive "What you see is what you get" editing mode
+Our focus is singular: provide a clean, well-documented interface that is customizable, extensible, and open-source.
 
-### Roadmap
-| Feature                       | Shipped | Almost There | We're Writing the Code | Investigating |
-|-------------------------------|:---:|:---:|:---:|:---:|
-| `IndexField`                  | ✅️ |  |  |  |
-| `RichTextField`               | ✅️ |  |  |  |
-| `Email Support`               | ✅️ |  |  |  |
-| `Fixed parent for IndexField` | ✅️ |  |  |  |
-| `TextField`                   | ✅️ |  |  |  |
-| `Dynamic Routes`              | ✅️ |  |  |  |
-| `PdfField`                    | ✅️ |  |  |  |
-| `ImageField`                  | ✅️ |  |  |  |
-| `StreamField`                 | ✅️ |  |  |  |
-| `LinkField`                   |  | ✅️ |  |  |
-| `Gatsby`                      |  |  | ✅️ |  |
-| `Converter (HELMUT)`          |  |  |  | ✅️ |
-| `Smart Converter (SMARTMUT)`  |  |  |  | ✅️ |
-| `E-Commerce`                  |  |  |  | ✅️ |
-| `User Management`             |  |  |  | ✅️ |
-| `Email Templates`             |  |  |  | ✅️ |
-| `Development Tools`           |  |  |  | ✅️ |
-| `Snek Editor`                 |  |  |  | ✅️ |
-| `YT Tutorials`                |  |  |  | ✅️ |
+### Features
 
-#### Msg inspiring PPL
-Chasing ones own tail is not inspiring.
+Jaen offers:
 
-#### Disclaimer
-Not for crybabies. Do not touch if you are afraid of being scratched a little.
+* A swift, user-friendly interface for authors
+* Complete autonomy over front-end design and structure
+* Quick and cache-friendly performance
+* StreamField for flexible content management without compromising structure
+* Comprehensive support for images and embedded content
+* Powered by blockchain, offering a free-running option
+* A simple, intuitive WYSIWYG (What You See Is What You Get) editing mode
+
+### Development Roadmap
+
+Here is a quick overview of our progress:
+
+| Feature                       | Shipped | Coming Soon | In Development | Under Investigation |
+|-------------------------------|:-------:|:-----------:|:--------------:|:------------------:|
+| `IndexField`                  | ✅️      |             |                |                     |
+| `RichTextField`               | ✅️      |             |                |                     |
+| `Email Support`               | ✅️      |             |                |                     |
+| `Fixed parent for IndexField` | ✅️      |             |                |                     |
+| `TextField`                   | ✅️      |             |                |                     |
+| `Dynamic Routes`              | ✅️      |             |                |                     |
+| `PdfField`                    | ✅️      |             |                |                     |
+| `ImageField`                  | ✅️      |             |                |                     |
+| `StreamField`                 | ✅️      |             |                |                     |
+| `LinkField`                   |         | ✅️          |                |                     |
+| `Gatsby`                      |         |             | ✅️             |                     |
+| `Converter (HELMUT)`          |         |             |                | ✅️                  |
+| `Smart Converter (SMARTMUT)`  |         |             |                | ✅️                  |
+| `E-Commerce`                  |         |             |                | ✅️                  |
+| `User Management`             |         |             |                | ✅️                  |
+| `Email Templates`             |         |             |                | ✅️                  |
+| `Development Tools`           |         |             |                | ✅️                  |
+| `Snek Editor`                 |         |             |                | ✅️                  |
+| `YT Tutorials`                |         |             |                | ✅️                  |
+
+#### 🌟 Msg inspiring PPL
+
+Remember, merely going in circles is not inspiring. Aim for progress, not motion.
+
+#### ⚠️ Disclaimer
+
+Jaen is not for the faint of heart. It's a tool for developers who aren't afraid to roll up their sleeves and dive into the details. Approach with curiosity and a readiness to learn.
+
 
 ## [](#-get-up-and-running-in-5-minutes)🚀 Get Up and Running in 5 Minutes
 
